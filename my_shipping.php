@@ -3,7 +3,7 @@
  Plugin Name: WP E-Commerce Skeleton Shipping Method
  Plugin URI: http://getshopped.org/resources/docs/get-involved/writing-a-new-shipping-module/
  Description: Sample Custom Shipping Module For WP E-Commerce
- Version: 0.1
+ Version: 0.2
  Author: Lee Willis
  Author URI: http://www.leewillis.co.uk/
 */
@@ -90,11 +90,16 @@ class my_shipping {
          * as-is on the product pages. It is also included in the final cart & checkout figure along
          * with the results from GetQuote (below) */
 
-	function get_item_shipping($unit_price, $quantity, $weight, $product_id) {
+	function get_item_shipping(&$cart_item) {
 
 		global $wpdb;
 
 		// If we're calculating a price based on a product, and that the store has shipping enabled
+
+		$product_id = $cart_item->product_id;
+		$quantity = $cart_item->quantity;
+		$weight = $cart_item->weight;
+		$unit_price = $cart_item->unit_price;
 
     		if (is_numeric($product_id) && (get_option('do_not_use_shipping') != 1)) {
 
