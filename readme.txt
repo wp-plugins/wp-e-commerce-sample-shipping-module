@@ -2,7 +2,7 @@
 Contributors: leewillis77
 Tags: e-commerce, shipping
 Requires at least: 2.8
-Tested up to: 2.9
+Tested up to: 3.0.4
 Stable tag: 0.2
 
 Sample shipping module for the WP E-Commerce system.
