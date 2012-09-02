@@ -2,7 +2,7 @@
 Contributors: leewillis77
 Tags: e-commerce, shipping
 Requires at least: 2.8
-Tested up to: 3.0.4
+Tested up to: 3.4.1
 Stable tag: 0.2
 
 Sample shipping module for the WP E-Commerce system.
@@ -29,7 +29,7 @@ See the tutorial [here](http://getshopped.org/resources/docs/get-involved/writin
 
 == Changelog ==
 
-= 0.2 = 
+= 0.2 =
 Compatibility with WP e-Commerce 3.7.6
 
 = 0.1 =
